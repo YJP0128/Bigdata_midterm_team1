@@ -16,7 +16,7 @@ print(df.shape, initial_df-df.shape[0])
 for col in df:
     print(f"{col}: {df[col].isnull().sum()} 개")
 
-'''
+# 데이터 결측치 처리
 df2 = pd.DataFrame()
 
 for col in df:
@@ -26,7 +26,7 @@ for col in df:
         df2[col] = df[col]
 
 print(df2.head())
-
+'''
 print(df.head())
 print(df.isna().sum())
 
